@@ -13,12 +13,6 @@ section {
 
 }
 
-img {
-
-  height: 50px;
-
-}
-
 /* Header */
 
 header {
@@ -131,7 +125,62 @@ nav li {
 
 /* Features Section */
 
+#features {
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  text-align: center;
+
+}
+
+#features figure {
+
+  background-color: white;
+  height: 635px;
+  display: block;
+  flex: 0 1 45%;
+  margin: 64px 19px 46px 19px;
+
+}
+
+#features figure img {
+
+  width: 100%;
+  min-height: 65%;
+  padding: 32px 32px 40px 32px;
+  object-fit: cover;
+
+}
+
+#features figcaption {
+
+  max-width: 90%;
+  min-height: 187px;
+  padding: 0 32px 0 32px;
+  margin: 0 auto;
+
+}
+
+#features p {
+
+  max-width: 100%;
+  color: #4a4a4a;
+  font-weight: lighter;
+  line-height: 1.2;
+
+}
+
+#features h2 {
+
+  max-width: 100%;
+  color: #4a4a4a;
+  font-size: 2.25rem;
+  font-weight: bold;
+  line-height: 1.2;
+
+}
 
 /* Filters Section */
 
@@ -172,7 +221,7 @@ nav li {
 
 /* Media Queries */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
 
   .tabletNav {
     display: flex;
@@ -193,7 +242,34 @@ nav li {
   }
 
   #signUp p, #signUp button {
+
     display: none;
+
+  }
+
+  #features {
+
+    text-align: left;
+
+  }
+
+  #features figure {
+
+    height: 550px;
+    margin: 32px 12px 32px 12px;
+
+  }
+
+  #features figcaption {
+
+    max-width: 100%;
+  
+  }
+
+  #features h2 {
+
+    font-size: 1.75rem;
+  
   }
 
 }
@@ -201,7 +277,7 @@ nav li {
 @media only screen and (max-width: 615px) {
 
   html {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   header {
@@ -235,6 +311,51 @@ nav li {
     background-repeat: no-repeat;
     background-position: right;
     display: flex;
+  
+  }
+
+  #features {
+
+    display: block;
+    text-align: center;
+
+  }
+
+  #features figure {
+
+    height: auto;
+    margin: 0;
+    padding-bottom: 30px;
+    
+  }
+
+  #features figcaption {
+
+    min-height: auto;
+    max-width: 90%;
+  
+  }
+
+  #features figure img {
+
+    width: 100%;
+    height: 65%;
+    padding: 16px 16px 24px 16px;
+    object-fit: cover;
+  
+  }
+
+  #features h2 {
+
+    font-size: 1.29rem;
+    font-weight: normal;
+    line-height: 1.3;
+  
+  }
+
+  #features p {
+
+    line-height: 1.4;
   
   }
 
