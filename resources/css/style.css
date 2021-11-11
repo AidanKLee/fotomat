@@ -115,6 +115,9 @@ nav li {
 
   color: whitesmoke;
   font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 408px;
   height: 64px;
   background-color: #4a4a4a;
@@ -138,10 +141,10 @@ nav li {
 #features figure {
 
   background-color: white;
-  height: 635px;
   display: block;
   flex: 0 1 45%;
   margin: 64px 19px 46px 19px;
+  padding-bottom: 20px;
 
 }
 
@@ -157,7 +160,7 @@ nav li {
 #features figcaption {
 
   max-width: 90%;
-  min-height: 187px;
+  min-height: 147px;
   padding: 0 32px 0 32px;
   margin: 0 auto;
 
@@ -249,7 +252,18 @@ nav li {
 
 /* Footer */
 
+footer {
 
+  background-color: #9b9b9b;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+  padding: 0 32px;
+
+}
 
 /* Broad Style Classes */
 
@@ -280,9 +294,13 @@ nav li {
 
 @media only screen and (max-width: 900px) {
 
+  /* Tablet Nav */
+
   .tabletNav {
     display: flex;
   }
+
+  /* Sign Up Section */
 
   #signUp article {
 
@@ -298,11 +316,13 @@ nav li {
   
   }
 
-  #signUp p, #signUp button {
+  .signUpBtn {
 
     display: none;
 
   }
+
+  /* Features Section */
 
   #features {
 
@@ -312,8 +332,13 @@ nav li {
 
   #features figure {
 
-    height: 550px;
     margin: 32px 12px 32px 12px;
+
+  }
+
+  #features figure img {
+
+    padding: 24px 24px;
 
   }
 
@@ -329,6 +354,8 @@ nav li {
   
   }
 
+  /* Filters Section */
+
   #filters {
 
     padding: 80px 0 0px 0;
@@ -343,11 +370,15 @@ nav li {
 
 }
 
-@media only screen and (max-width: 615px) {
+@media only screen and (max-width: 650px) {
+
+  /* Universal */
 
   html {
     font-size: 14px;
   }
+
+  /* Header */
 
   header {
     height: 48px;
@@ -365,13 +396,19 @@ nav li {
     display: none;
   }
 
+  /* Desktop Nav */
+
   .desktopNav {
     display: none;
   }
 
+  /* Mobile Nav */
+
   .mobileNav {
     display: flex;
   }
+
+  /* Sign Up Section */
 
   #signUp {
 
@@ -382,6 +419,8 @@ nav li {
     display: flex;
   
   }
+
+  /* Features Section */
 
   #features {
 
@@ -428,6 +467,8 @@ nav li {
   
   }
 
+  /* Filters Section */
+
   #filters {
 
     padding: 30px 0 0px 0;
@@ -457,6 +498,8 @@ nav li {
 
   }
 
+  /* Quotes Section */
+
   #quotes {
 
     flex-direction: column;
@@ -472,6 +515,14 @@ nav li {
     font-size: 1.71rem;
     padding-bottom: 16px;
     margin: 0;
+
+  }
+
+  /* Footer Section */
+
+  footer {
+
+    font-size: 10px;
 
   }
 
