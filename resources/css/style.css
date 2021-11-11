@@ -184,10 +184,67 @@ nav li {
 
 /* Filters Section */
 
+#filters {
 
+  background-color: #4a4a4a;
+  text-align: center;
+  padding: 84px 0 64px 0;
+
+}
+
+.imagesContainer {
+
+  width: 100%;
+  display: flex;
+
+}
+
+#filters h2 {
+
+  color: white;
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin: 0 auto;
+
+}
+
+#filters h3 {
+
+  width: 40%;
+  color: whitesmoke;
+  font-weight: lighter;
+  line-height: 1.4;
+  margin: 0 auto;
+  padding: 12px 12px 80px 12px;
+
+}
+
+
+#filters img {
+  max-width: 25%;
+}
 
 /* Quotes Section */
 
+#quotes {
+
+  background-color: #f3f3f3;
+  padding: 80px 20px 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#quotes blockquote {
+
+  color: #4a4a4a;
+  font-family: 'PT Serif';
+  font-size: 1.875rem;
+  margin-right: 30px;
+  font-style: italic;
+
+}
 
 
 /* Footer */
@@ -269,6 +326,18 @@ nav li {
   #features h2 {
 
     font-size: 1.75rem;
+  
+  }
+
+  #filters {
+
+    padding: 80px 0 0px 0;
+  
+  }
+
+  #filters h3 {
+
+    width: auto;
   
   }
 
@@ -357,6 +426,53 @@ nav li {
 
     line-height: 1.4;
   
+  }
+
+  #filters {
+
+    padding: 30px 0 0px 0;
+  
+  }
+
+  #filters h2 {
+
+    font-weight: normal;
+    font-size: 1.75rem;
+  
+  }
+
+  #filters h3 {
+
+    padding: 12px 12px 30px 12px;
+  
+  }
+
+  #filters img {
+    max-width: 33.333333333%;
+  }
+
+  .displayNone {
+
+    display: none;
+
+  }
+
+  #quotes {
+
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    padding: 40px 40px 40px 40px;
+  
+  }
+
+  #quotes blockquote {
+
+    line-height: 1.4;
+    font-size: 1.71rem;
+    padding-bottom: 16px;
+    margin: 0;
+
   }
 
 }
