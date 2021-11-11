@@ -151,7 +151,6 @@ nav li {
 #features figure img {
 
   width: 100%;
-  min-height: 65%;
   padding: 32px 32px 40px 32px;
   object-fit: cover;
 
@@ -322,6 +321,10 @@ footer {
 
   }
 
+  #signUp p {
+    display: none;
+  }
+
   /* Features Section */
 
   #features {
@@ -447,7 +450,6 @@ footer {
   #features figure img {
 
     width: 100%;
-    height: 65%;
     padding: 16px 16px 24px 16px;
     object-fit: cover;
   
